@@ -18,7 +18,7 @@
 
 
 
-<build>
+<!-- <build>
   <plugins>
     <plugin>
       <groupId>com.heroku.sdk</groupId>
@@ -31,7 +31,7 @@
       </configuration>
     </plugin>
   </plugins>
-</build>
+</build> -->
 <profiles>
   <profile>
     <id>gia</id>
