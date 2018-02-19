@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<build>
+  <plugins>
+    <plugin>
+      <groupId>com.heroku.sdk</groupId>
+      <artifactId>heroku-maven-plugin</artifactId>
+      <configuration>
+      	<appName>gia</appName>
+        <processTypes>
+          <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+        </processTypes>
+        <jdkVersion>1.8</jdkVersion>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
+
+
+
+
+
+
+<!-- <configuration>
+  <appName>gia</appName>
+  
+   <processTypes>
+     <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+  </processTypes>
+  
+  <project>
+  <build>
+    ...
+    <plugins>
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>2.0.3</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+
+<jdkVersion>1.8</jdkVersion>
+
+</configuration> -->
+
+ 
+  
+  
